@@ -40,7 +40,7 @@
             "type": "String"
         },
         "environmentVariables": {
-            "type": "secureobject"
+            "type": "secureObject"
         },
         "ipAddressType": {
             "type": "String"

@@ -6,7 +6,7 @@
             "value": "westus"
         },
         "containerName": {
-            "value": "aawwz1"
+            "value": "aawwz2"
         },
         "imageType": {
             "value": "Public"
@@ -26,8 +26,13 @@
         "restartPolicy": {
             "value": "OnFailure"
         },
-        "environmentVariables": {
-            "value": []
+        "dbPwd": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/ca772070-d065-4d9b-b688-369563d77992/resourceGroups/acornuseridentity/providers/Microsoft.KeyVault/vaults/acornKV"
+                },
+                "secretName": "keysecret"
+            }
         },
         "ipAddressType": {
             "value": "Public"

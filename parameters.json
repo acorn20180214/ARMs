@@ -27,17 +27,7 @@
             "value": "OnFailure"
         },
         "environmentVariables": {
-            "value": [
-                {
-                    "name": "POSTGRESSQL_PWD",
-                    "reference": {
-                      "keyVault": {
-                          "id": "/subscriptions/ca772070-d065-4d9b-b688-369563d77992/resourceGroups/acornuseridentity/providers/Microsoft.KeyVault/vaults/acornKV"
-                          },
-                      "secretName": "keysecret"
-                    }
-                }
-            ]
+            "value": []
         },
         "ipAddressType": {
             "value": "Public"

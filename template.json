@@ -39,9 +39,6 @@
             ],
             "type": "String"
         },
-        "environmentVariables": {
-            "type": "secureObject"
-        },
         "ipAddressType": {
             "type": "String"
         },

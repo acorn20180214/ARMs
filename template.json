@@ -39,6 +39,9 @@
             ],
             "type": "String"
         },
+        "dbPwd": {
+            "type": "securestring"
+        },
         "ipAddressType": {
             "type": "String"
         },
@@ -65,7 +68,12 @@
                                     "memoryInGB": "[float(parameters('memory'))]"
                                 }
                             },
-                            "environmentVariables": "[parameters('environmentVariables')]",
+                            "environmentVariables": [
+                                {
+                                    "name": "DBPassword",
+                                    "value": "[parameters('dbPwd')]"
+                                }
+                            ],
                             "ports": "[parameters('ports')]"
                         }
                     }
